@@ -15,9 +15,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 # HOW TO INSTALL?
 
 ### 1. Clone the repository
-    >
-
-        # git clone https://github.com/TJ56/dotfile.git
+    # git clone https://github.com/TJ56/dotfile.git
     
 ### 2. Install the preferred topics
 
