@@ -4,7 +4,10 @@ ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="norm"
 #export ZSH_THEME="funky"
 #export ZSH_THEME="dogenpunk"
-export ZSH_THEME="jreese"
+#export ZSH_THEME="jreese"
+export ZSH_THEME="afowler"
+#export ZSH_THEME=""
+
 
 # settings
 # --------------------------------------------
@@ -17,6 +20,11 @@ alias ll='ls -alF'
 alias l='ls -l'
 alias la='ls -A'
 alias cr='clear'
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ...='cd ../../../'
+alias ports='netstat -tulanp'
+alias vi='vim'
 #alias lh='l -h'
 alias dirsize='ls -l | grep ^d | awk "{print $9}" | xargs du -sh | sort -n'
 alias rsync_icoding='rsync -vaz --delete ~/icoding/ ~/Dropbox/icoding/'
@@ -30,7 +38,21 @@ alias server2='ssh tj@192.168.77.228'  # pw: tj
 alias hw='ssh tj@140.117.176.180'
 alias trace_code='ctags -R && cscope -R'
 alias sl='ls'
-alias tmux='tmux -2'
+#alias tmux='tmux -2'
+export TERM=xterm
+alias tmux='TERM=xterm-256color tmux -2'
+alias gitlog='git log --oneline --decorate=full --graph --remotes'
+alias gs='git status -uno'
+alias gb='git branch'
+alias finch='screen -S finch finch'
+alias astyle='astyle -n --style=allman --indent-switches --indent=tab --indent-labels --indent-preprocessor -p -U'
+alias sh142='ssh root@192.168.13.142'
+alias sh143='ssh root@192.168.13.143'
+alias sh144='ssh root@192.168.13.144'
+alias sh145='ssh root@192.168.13.145'
+alias sh146='ssh root@192.168.13.146'
+alias sh149='ssh root@192.168.13.149'
+alias ranger='~/ztest/ranger-stable/ranger.py'
 export LC_CTYPE=zh_TW.utf8
 #export LANG=zh_TW.UTF-8
 #export LC_ALL=zh_TW.UTF-8
@@ -90,14 +112,23 @@ fi
 
 autoload -U compinit && compinit
 
+#autoload predict-on
+#predict-on
+autoload -U incremental-complete-word predict-on
+zle -N incremental-complete-word
+zle -N predict-on
+
+PATH=$PATH:/usr/local/arm-linux/bin:~/bin                                                                         
+export PATH                                                                                                       
+LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib                 
+export LD_LIBRARY_PATH                                                                                          
+
+./.broadcast-user.sh                                        
+                           
+[[ -s ~/.autojump/etc/profile.d/autojump.zsh  ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
 
-
-
-
-
-
-
-
-
-
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}

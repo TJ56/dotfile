@@ -55,8 +55,8 @@ set backspace=indent,eol,start
 "set background=dark
 
 " colorscheme way
-"colorscheme desert
-colorscheme delek
+" colorscheme desert
+" colorscheme delek
 
 
 "spell check
@@ -134,3 +134,5 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set nobackup             " don't backup
 set noswapfile           " don't backup
+
+
