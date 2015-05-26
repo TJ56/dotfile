@@ -53,6 +53,7 @@ alias sh145='ssh root@192.168.13.145'
 alias sh146='ssh root@192.168.13.146'
 alias sh149='ssh root@192.168.13.149'
 alias ranger='~/ztest/ranger-stable/ranger.py'
+alias py='python2.7'
 export LC_CTYPE=zh_TW.utf8
 #export LANG=zh_TW.UTF-8
 #export LC_ALL=zh_TW.UTF-8

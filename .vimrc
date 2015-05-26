@@ -135,4 +135,7 @@ set noerrorbells         " don't beep
 set nobackup             " don't backup
 set noswapfile           " don't backup
 
+set fileencodings=gb2312,utf-8  
+set fileencoding=gb2312  
+set termencoding=utf-8 
 
