@@ -5,7 +5,8 @@ ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="funky"
 #export ZSH_THEME="dogenpunk"
 #export ZSH_THEME="jreese"
-export ZSH_THEME="afowler"
+#export ZSH_THEME="afowler"
+export ZSH_THEME="tj"
 #export ZSH_THEME=""
 
 

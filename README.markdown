@@ -1,4 +1,5 @@
-#TJ's DotFiles
+TJ's DotFiles
+===
 
 This is an repository of the setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
@@ -11,11 +12,20 @@ This is an repository of the setting files and plugins for some useful tools(scr
 * tmux
 * vim
 
+Debian distro:
+```language
+# sudo apt-get install xxx
+```
+Arch Linux:
+```language
+# pacman -S xxx
+```
 
-# HOW TO INSTALL?
+
+# HOW TO INSTALL
 
 ### 1. Clone the repository
-    # git clone https://github.com/TJ56/dotfile.git
+    # git clone https://github.com/TJ56/dotfiles.git
     
 ### 2. Install the preferred topics
 
@@ -42,14 +52,14 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
         # mv ~/.vim ~/dotfiles/.vim/extfdr
 
-    >commands:
+    >soft-link commands:
 
         # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
         # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
 
 * ># zsh
 
-    >commands:
+    >soft-link commands:
 
         # rm ~/.zshrc   && ln -s dotfiles/.zshrc ~/.zshrc
         # rm ~/.zsh -rf && ln -s dotfiles/.zsh   ~/.zsh
@@ -105,6 +115,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
         -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
         co -P JLanguageTool   
 -->
+
 + >#[matchit](https://github.com/vim-scripts/matchit.zip)
 
     >Extended % matching for HTML, LaTeX, and many other languages
@@ -306,6 +317,10 @@ NOTES
                     git tag -d <tag>
                remote:
                     git push origin :ref/tags/<mytag>
+                    
+            5. show remote branch and push place
+            	local:
+                	git remote show origin
 }}} 
 vim:fdm=marker
 -->
