@@ -9,17 +9,28 @@ This is an repository of the setting files and plugins for some useful tools(scr
 * svn
 * zsh
 * screen
-* tmux
-* vim
+* tmux   >= 1.9
+* vim    >= 7.3
 
-Debian distro:
-```language
-# sudo apt-get install xxx
-```
-Arch Linux:
-```language
-# pacman -S xxx
-```
+    - Debian distro:
+    ```language
+    # sudo apt-get install xxx
+    ```
+    - Arch Linux:
+    ```language
+    # pacman -S xxx
+    ```
+
+* ctags
+
+    - Debian
+    ```
+    # sudo apt-ge install exuberant-ctags
+    ```
+    - Arch Linux
+    ```
+    # pacman -S ctags
+    ```
 
 
 # HOW TO INSTALL
@@ -28,6 +39,15 @@ Arch Linux:
     # git clone https://github.com/TJ56/dotfiles.git
     
 ### 2. Install the preferred topics
+* >#Prepare 
+
+    >touch default rc-file if it doesn't exist in your home/ directory (~/.bashrc & ~/.zshrc ..etc)
+
+        # touch .screenrc
+        # touch .tmux.conf
+        # touch .vimrc
+        # mkdir .vim
+        # mkdir .zsh
 
 * >#screen/tmux
 
@@ -45,6 +65,16 @@ Arch Linux:
 
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
+    
+* >#tmux tpm plugin management
+
+    > dotfiles/.tmux/plugins/tpm, update as needed
+
+        # git pull 
+         
+    > if directory is empty
+
+        # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
 
 * >#Vim
 
@@ -85,6 +115,7 @@ Arch Linux:
         # cd dotfiles  
         # git pull
         # ./commands/submod_sync.sh
+        # ./commands/submod_upgrade.sh
 
 
 ##Vim PLUGIN INFO

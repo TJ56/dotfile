@@ -7,7 +7,6 @@ ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="jreese"
 #export ZSH_THEME="afowler"
 export ZSH_THEME="tj"
-#export ZSH_THEME=""
 
 
 # settings
@@ -125,7 +124,7 @@ export PATH
 LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib                 
 export LD_LIBRARY_PATH                                                                                          
 
-./.broadcast-user.sh                                        
+#./.broadcast-user.sh                                        
                            
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh  ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
