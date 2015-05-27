@@ -3,7 +3,6 @@ TJ's DotFiles
 
 This is an repository of the setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
-
 # PEREQUISITES:
 
 ### General Packages installation
@@ -19,26 +18,24 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
 > ##### package-name
 > - Debian distro:
->     ```language
->     # sudo apt-get install package-name
->     ```
+> 
+>   sudo apt-get install package-name
+        
 > - Arch Linux:
->     ```language
->     # pacman -S package-name
->     ```
+>
+>       pacman -S package-name
 
 
 ### Specific Packages installation
 
 > ##### ctags
 > - Debian
->     ```
->     # sudo apt-ge install exuberant-ctags
->     ```
+>     
+>       sudo apt-ge install exuberant-ctags    
+
 > - Arch Linux
->     ```
->     # pacman -S ctags
->     ```
+>
+>       pacman -S ctags
 
 
 # HOW TO INSTALL
