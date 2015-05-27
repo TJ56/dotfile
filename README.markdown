@@ -3,33 +3,39 @@ TJ's DotFiles
 
 This is an repository of the setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
-# PREREQUISITES: 
 
-* git 
+EREQUISITES:
+
+### General Packages installation
+
+* git
 * svn
 * zsh
 * screen
-* tmux 
-    * version >= 1.9
-* vim  
-    * version >= 7.3
+* tmux
+    - version >= 1.9
+* vim
+    - version >= 7.3
 
-    - Debian distro:
+> ##### package-name
+- Debian distro:
     ```language
-    # sudo apt-get install xxx
+    # sudo apt-get install package-name
     ```
-    - Arch Linux:
+- Arch Linux:
     ```language
-    # pacman -S xxx
+    # pacman -S package-name
     ```
 
-* ctags
 
-    - Debian
+### Specific Packages installation
+
+> ##### ctags
+- Debian
     ```
     # sudo apt-ge install exuberant-ctags
     ```
-    - Arch Linux
+- Arch Linux
     ```
     # pacman -S ctags
     ```
