@@ -9,8 +9,10 @@ This is an repository of the setting files and plugins for some useful tools(scr
 * svn
 * zsh
 * screen
-* tmux   >= 1.9
-* vim    >= 7.3
+* tmux 
+    * version >= 1.9
+* vim  
+    * version >= 7.3
 
     - Debian distro:
     ```language

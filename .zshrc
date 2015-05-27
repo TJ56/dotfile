@@ -133,3 +133,33 @@ function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
     echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
+
+# this one is very nice:
+# cursor up/down look for a command that started like the one starting on the command line
+function history-search-end {
+    integer ocursor=$CURSOR
+
+    if [[ $LASTWIDGET = history-beginning-search-*-end  ]]; then
+          # Last widget called set $hbs_pos.
+          CURSOR=$hbs_pos
+      else
+          hbs_pos=$CURSOR
+      fi
+
+      if zle .${WIDGET%-end}; then
+          # success, go to end of line
+          zle .end-of-line
+      else
+          # failure, restore position
+          CURSOR=$ocursor
+          return 1
+      fi
+  }
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+# some keys
+#bindkey "\e[A" history-beginning-search-backward #cursor up
+#bindkey "\e[B" history-beginning-search-forward  #cursor down
+bindkey "\e[A" history-beginning-search-backward-end #cursor up
+bindkey "\e[B" history-beginning-search-forward-end  #cursor down
