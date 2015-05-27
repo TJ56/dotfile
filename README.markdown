@@ -83,7 +83,6 @@ This is an repository of the setting files and plugins for some useful tools(scr
     > if directory is empty
 
         # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
-
 * >#Vim
 
     >In case you want to save your original Vim setting, you can move the original .vim/ as below
