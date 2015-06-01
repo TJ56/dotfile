@@ -126,7 +126,9 @@ export LD_LIBRARY_PATH
 
 #./.broadcast-user.sh                                        
                            
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh  ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+# AutoJump is already included in Debian/Arch Linux distro repositories
+#[[ -s ~/.autojump/etc/profile.d/autojump.zsh  ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+
 
 
 function git_prompt_info() {

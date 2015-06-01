@@ -139,3 +139,7 @@ set fileencodings=gb2312,utf-8
 set fileencoding=gb2312  
 set termencoding=utf-8 
 
+"Tabnew exchange
+nmap , :tabprev<CR> 
+nmap . :tabnext<CR> 
+
