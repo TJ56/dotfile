@@ -163,5 +163,10 @@ zle -N history-beginning-search-forward-end history-search-end
 # some keys
 #bindkey "\e[A" history-beginning-search-backward #cursor up
 #bindkey "\e[B" history-beginning-search-forward  #cursor down
-bindkey "\e[A" history-beginning-search-backward-end #cursor up
-bindkey "\e[B" history-beginning-search-forward-end  #cursor down
+bindkey "OA" history-beginning-search-backward-end #cursor up
+bindkey "OB" history-beginning-search-forward-end  #cursor down
+
+bindkey 'OB'  beginning-of-line
+bindkey '[4~]' end-of-line
+
+
