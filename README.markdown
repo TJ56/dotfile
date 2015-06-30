@@ -187,6 +187,9 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >pathogen.vim: manage your runtimepath
 
++ >#[VisIncr](https://github.com/vim-scripts/VisIncr)
+
+    >visincrPlugin.vim: making a column of increasing or decreasing numbers, dates, or daynames
 
 ## Vim Personal Features
    
