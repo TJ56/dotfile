@@ -43,6 +43,7 @@ export TERM=xterm
 alias tmux='TERM=xterm-256color tmux -2'
 alias gitlog='git log --oneline --decorate=full --graph --remotes'
 alias gs='git status -uno'
+alias gd='git diff -w'
 alias gb='git branch'
 alias finch='screen -S finch finch'
 alias astyle='astyle -n --style=allman --indent-switches --indent=tab --indent-labels --indent-preprocessor -p -U'
