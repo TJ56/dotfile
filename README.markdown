@@ -109,9 +109,13 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
 * >#tmux plugin management
 
-    > dotfiles/.tmux/plugins/*, update as needed
+    > dotfiles/.tmux/plugins/tmux-continuum, update as needed
 
-        # git pull
+        # git pull https://github.com/tmux-plugins/tmux-continuum.git
+
+    > dotfiles/.tmux/plugins/tmux-resurrect, update as needed
+
+        # git pull https://github.com/tmux-plugins/tmux-resurrect.git
 
     >soft-link commands:
 
