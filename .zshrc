@@ -55,6 +55,7 @@ alias sh146='ssh root@192.168.13.146'
 alias sh149='ssh root@192.168.13.149'
 alias ranger='~/ztest/ranger-stable/ranger.py'
 alias py='python2.7'
+alias prevmd='function _prevmd(){ grip $1 192.168.13.1:6419  };_prevmd'
 export LC_CTYPE=zh_TW.utf8
 #export LANG=zh_TW.UTF-8
 #export LC_ALL=zh_TW.UTF-8
@@ -86,7 +87,7 @@ function test_identities {
         fi
     fi
 }
-    
+
 # check for running ssh-agent with proper $SSH_AGENT_PID
 if [ -n "$SSH_AGENT_PID"  ]; then
     ps -ef | grep "$SSH_AGENT_PID" | grep ssh-agent > /dev/null
@@ -120,13 +121,13 @@ autoload -U incremental-complete-word predict-on
 zle -N incremental-complete-word
 zle -N predict-on
 
-PATH=$PATH:/usr/local/arm-linux/bin:~/bin                                                                         
-export PATH                                                                                                       
-LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib                 
-export LD_LIBRARY_PATH                                                                                          
+PATH=$PATH:/usr/local/arm-linux/bin:~/bin
+export PATH
+LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib
+export LD_LIBRARY_PATH
 
-#./.broadcast-user.sh                                        
-                           
+#./.broadcast-user.sh
+
 # AutoJump is already included in Debian/Arch Linux distro repositories
 #[[ -s ~/.autojump/etc/profile.d/autojump.zsh  ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
