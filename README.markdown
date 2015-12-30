@@ -106,6 +106,17 @@ This is an repository of the setting files and plugins for some useful tools(scr
     > if directory is empty
 
         # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+* >#tmux plugin management
+
+    > dotfiles/.tmux/plugins/*, update as needed
+
+        # git pull
+
+    >soft-link commands:
+
+        # rm ~/.tmux -rf && ln -s dotfiles/.tmux   ~/.tmux
+
 * >#Vim
 
     >In case you want to save your original Vim setting, you can move the original .vim/ as below
@@ -324,6 +335,12 @@ This is an repository of the setting files and plugins for some useful tools(scr
             ON               <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
             OFF              <C-a> M   (enable the X-system native copy/paste behavior)
 
+    **restore session mode**
+
+            Save               <C-a> <C-s>                    (support by tmux-resurrect plugin)
+            Restore            <C-a> <C-r>                    (support by tmux-resurrect plugin)
+            Restore            # tmux source-file .tmux.conf  (support by tmux-continuum plugin)
+            Execute timeing    Save before reboot, then execute under new tmux session after reboot
 <!--
 + LanguageTool installation
 
