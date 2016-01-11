@@ -143,3 +143,4 @@ set termencoding=utf-8
 nmap , :tabprev<CR> 
 nmap . :tabnext<CR> 
 
+let g:gitgutter_realtime = 0

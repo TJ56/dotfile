@@ -121,10 +121,19 @@ autoload -U incremental-complete-word predict-on
 zle -N incremental-complete-word
 zle -N predict-on
 
+# Moxa Usage
 PATH=$PATH:/usr/local/arm-linux/bin:~/bin
 export PATH
 LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib
 export LD_LIBRARY_PATH
+
+# Ccache usage
+#export PATH="/usr/lib/ccache/bin/:$PATH"
+#export CCACHE_PATH='/usr/bin'
+## Colorgcc usage
+#export PATH="/usr/lib/colorgcc/bin/:$PATH"
+## Colormake usage
+#export PATH="~/bin/:$PATH"
 
 #./.broadcast-user.sh
 
@@ -171,4 +180,27 @@ bindkey "OB" history-beginning-search-forward-end  #cursor down
 bindkey 'OB'  beginning-of-line
 bindkey '[4~]' end-of-line
 
-
+watch=()
+# Keypad
+# 0 . Enter
+bindkey -s "^[Op" "0"
+bindkey -s "^[On" "."
+bindkey -s "^[OM" "^M"
+# 1 2 3
+bindkey -s "^[Oq" "1"
+bindkey -s "^[Or" "2"
+bindkey -s "^[Os" "3"
+# 4 5 6
+bindkey -s "^[Ot" "4"
+bindkey -s "^[Ou" "5"
+bindkey -s "^[Ov" "6"
+# 7 8 9
+bindkey -s "^[Ow" "7"
+bindkey -s "^[Ox" "8"
+bindkey -s "^[Oy" "9"
+# + -  * / =
+bindkey -s "^[Ok" "+"
+bindkey -s "^[Om" "-"
+bindkey -s "^[Oj" "*"
+bindkey -s "^[Oo" "/"
+bindkey -s "^[OX" "="
