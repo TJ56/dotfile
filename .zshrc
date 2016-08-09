@@ -33,7 +33,7 @@ alias rsync_Mix='rsync -vaz --delete ~/Mix/ ~/Dropbox/Mix/'
 alias gramcheck='java -jar ~/Dropbox/LanguageTool/LanguageTool.jar'
 alias memleak='valgrind --tool=memcheck --leak-check=yes'
 alias showleak='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
-alias hfs='python -m SimpleHTTPServer'
+alias hfs='python2 -m SimpleHTTPServer'
 alias server='ssh tj@192.168.77.8'
 alias server2='ssh tj@192.168.77.228'  # pw: tj
 alias hw='ssh tj@140.117.176.180'
