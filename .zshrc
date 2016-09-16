@@ -23,6 +23,7 @@ alias cr='clear'
 alias ..='cd ..'
 alias cd..='cd ..'
 alias ...='cd ../../../'
+alias ....='cd ../../../../'
 alias ports='netstat -tulanp'
 alias vi='vim'
 #alias lh='l -h'
@@ -55,7 +56,12 @@ alias sh146='ssh root@192.168.13.146'
 alias sh149='ssh root@192.168.13.149'
 alias ranger='~/ztest/ranger-stable/ranger.py'
 alias py='python2.7'
+alias python='python2.7'
+alias pip='pip2.7'
 alias prevmd='function _prevmd(){ grip $1 192.168.13.1:6419  };_prevmd'
+alias ag='ag --path-to-agignore=~/.agignore'   # ag -G <file_name> <string>
+alias make='colormake'
+alias mc='make clean'
 export LC_CTYPE=zh_TW.utf8
 #export LANG=zh_TW.UTF-8
 #export LC_ALL=zh_TW.UTF-8
@@ -124,8 +130,10 @@ zle -N predict-on
 # Moxa Usage
 PATH=$PATH:/usr/local/arm-linux/bin:~/bin
 export PATH
-LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib
+LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib:/usr/local/bin/gcc-linaro-5.1-2015.08-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH
+PATH=/usr/local/bin/gcc-linaro-5.1-2015.08-x86_64_arm-linux-gnueabihf/bin:$PATH
+export PATH
 
 # Ccache usage
 #export PATH="/usr/lib/ccache/bin/:$PATH"

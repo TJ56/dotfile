@@ -144,3 +144,9 @@ nmap , :tabprev<CR>
 nmap . :tabnext<CR> 
 
 let g:gitgutter_realtime = 0
+let g:vim_markdown_folding_disabled = 1
+
+
+set fileformat=unix
+"set fileformats=unix,dos
+"set nobinary"
