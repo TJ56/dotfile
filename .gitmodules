@@ -43,3 +43,27 @@
 [submodule ".vim/bundle/neosnippet"]
 	path = .vim/bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".tmux/plugins/tmux-continuum"]
+	path = .tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum.git
+[submodule ".tmux/plugins/tmux-copycat"]
+	path = .tmux/plugins/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat.git
+[submodule ".tmux/plugins/tmux-resurrect"]
+	path = .tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule ".tmux/plugins/vim-tmux-focus-events"]
+	path = .tmux/plugins/vim-tmux-focus-events 
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
