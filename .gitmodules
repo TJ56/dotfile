@@ -58,11 +58,8 @@
 [submodule ".tmux/plugins/tmux-copycat"]
 	path = .tmux/plugins/tmux-copycat
 	url = https://github.com/tmux-plugins/tmux-copycat.git
-[submodule ".tmux/plugins/tmux-resurrect"]
-	path = .tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect.git
 [submodule ".tmux/plugins/vim-tmux-focus-events"]
-	path = .tmux/plugins/vim-tmux-focus-events 
+	path = .tmux/plugins/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
