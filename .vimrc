@@ -104,7 +104,7 @@ set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 
 " pathogen setting "
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 

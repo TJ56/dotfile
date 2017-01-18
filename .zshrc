@@ -213,3 +213,7 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 bindkey -s "^[OX" "="
+
+# don't create .pyc and .pyo files
+PYTHONDONTWRITEBYTECODE=True
+export PYTHONDONTWRITEBYTECODE
