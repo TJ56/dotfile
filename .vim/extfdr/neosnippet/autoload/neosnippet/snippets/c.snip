@@ -1,0 +1,18 @@
+snippet header
+     /**************************************************************************
+      * Copyright Moxa Inc.
+      *
+      * ${1:`expand('%:t')`}
+      *
+      * Date         Author       Comment
+      * ${2: `strftime("%B %d, %Y")`}   TJ Tai  Created.
+      *************************************************************************/
+
+snippet dbg
+abbr    dbg("...\n", ...);
+    dbg("${1}\n", ${2});
+
+snippet dbgPrintf
+abbr    dbgPrintf("...\n", ...);
+    dbgPrintf("${1}\n", ${2});
+

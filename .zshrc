@@ -16,8 +16,8 @@ plugins=(git vim github svn brew osx)
 source $ZSH/oh-my-zsh.sh
 
 # alias
-alias ll='ls -alF'
-alias l='ls -l'
+alias ll='ls -alF --color=auto'
+alias l='ls -l --color=auto'
 alias la='ls -A'
 alias cr='clear'
 alias ..='cd ..'
@@ -44,7 +44,8 @@ export TERM=xterm
 alias tmux='TERM=xterm-256color tmux -2'
 alias gitlog='git log --oneline --decorate=full --graph --remotes'
 alias gs='git status -uno'
-alias gd='git diff -w'
+#alias gd='git diff -w'
+alias gd='git diff --color | diff-so-fancy | less'
 alias gb='git branch'
 alias finch='screen -S finch finch'
 alias astyle='astyle -n --style=allman --indent-switches --indent=tab --indent-labels --indent-preprocessor -p -U'

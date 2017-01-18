@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/wanhan_hsieh/moxaart/root-disk-menuconfig/.userland/data_logging_service/build-little-endian'
+let g:netrw_dirhist_2='/home/wanhan_hsieh/moxaart/linux-2.6.38/fs/ramfs'
+let g:netrw_dirhist_3='/home/wanhan_hsieh/moxaart/prdk_5.30/Lib'

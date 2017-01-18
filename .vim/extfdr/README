@@ -1,0 +1,6 @@
+if we need to add new setting to vim ,
+add the same structure (path) in extfdr
+think that dotfile/.vim/extfdr/after = dotfile/.vim/bundle/samuelolol/
+
+
+if you want to overwrite samuel's setting , add in after/

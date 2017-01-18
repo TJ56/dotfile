@@ -150,3 +150,34 @@ let g:vim_markdown_folding_disabled = 1
 set fileformat=unix
 "set fileformats=unix,dos
 "set nobinary"
+"
+
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
+" multiple line input , use <Shift-v> to enter visual-block mode and then <C-n> to start multi_cursor
+Plug 'terryma/vim-multiple-cursors'
+
+" Make sure you use single quotes
+"
+" " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+" Plug 'junegunn/vim-easy-align'
+
+" markdown preview with math support (not used on server)
+" Plug 'iamcco/mathjax-support-for-mkdp'
+" Plug 'iamcco/markdown-preview.vim'
+
+" Multiple Plug commands can be written in a single line using | separators
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+"Initialize plugin system
+call plug#end()
+
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+""let g:UltiSnipsExpandTrigger="<tab>"
+""let g:UltiSnipsJumpForwardTrigger="<Enter>"
+""let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+""let g:UltiSnipsEditSplit="vertical"
+""let g:UltiSnipsListSnippets="<c-tab>"
