@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/bin
+export PATH=`pwd`:/usr/local/bin/gcc-arm-none-eabi-6-2017-q2-update/bin:/usr/local/bin:$PATH
 ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="miloshadzic"
 #export ZSH_THEME="norm"
@@ -34,9 +34,6 @@ alias gramcheck='java -jar ~/Dropbox/LanguageTool/LanguageTool.jar'
 alias memleak='valgrind --tool=memcheck --leak-check=yes'
 alias showleak='valgrind --tool=memcheck --leak-check=full --show-reachable=yes'
 alias hfs='python2 -m SimpleHTTPServer'
-alias server='ssh tj@192.168.77.8'
-alias server2='ssh tj@192.168.77.228'  # pw: tj
-alias hw='ssh tj@140.117.176.180'
 alias trace_code='ctags -R && cscope -R'
 alias sl='ls'
 #alias tmux='tmux -2'
@@ -49,18 +46,12 @@ alias gd='git diff --color | diff-so-fancy | less'
 alias gb='git branch'
 alias finch='screen -S finch finch'
 alias astyle='astyle -n --style=allman --indent-switches --indent=tab --indent-labels --indent-preprocessor -p -U'
-alias sh142='ssh root@192.168.13.142'
-alias sh143='ssh root@192.168.13.143'
-alias sh144='ssh root@192.168.13.144'
-alias sh145='ssh root@192.168.13.145'
-alias sh146='ssh root@192.168.13.146'
-alias sh149='ssh root@192.168.13.149'
 alias ranger='~/ztest/ranger-stable/ranger.py'
-alias py='python2.7'
-alias python='python2.7'
-alias pip='pip2.7'
-alias prevmd='function _prevmd(){ grip $1 192.168.13.1:6419  };_prevmd'
-alias ag='ag --path-to-agignore=~/.agignore'   # ag -G <file_name> <string>
+#alias py='python2.7'
+#alias python='python2.7'
+#alias pip='pip2.7'
+alias prevmd='function _prevmd(){ grip $1 192.168.111.1:6419  };_prevmd'
+#alias ag='ag --path-to-agignore=~/.agignore'   # ag -G <file_name> <string>
 alias make='colormake'
 alias mc='make clean'
 export LC_CTYPE=zh_TW.utf8
@@ -129,7 +120,7 @@ zle -N incremental-complete-word
 zle -N predict-on
 
 # Moxa Usage
-PATH=$PATH:/usr/local/arm-linux/bin:~/bin
+PATH=$PATH:/usr/local/arm-linux/bin:~/bin:~/bin/git-scripts/
 export PATH
 LD_LIBRARY_PATH=/usr/local/arm-linux/tools/lib:/usr/lib:/usr/local/bin/gcc-linaro-5.1-2015.08-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH

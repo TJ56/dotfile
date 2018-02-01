@@ -100,6 +100,7 @@ highlight User6 ctermfg=white
 set statusline=%6*%<\ %1*[%F]
 set statusline+=\ %5*[%{&encoding}, " encoding
 set statusline+=%{&fileformat}]%m " file format
+set statusline+=\ %5*[lint:%{ALEGetStatusLine()}] " linter info
 set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 
 " pathogen setting "
@@ -181,3 +182,16 @@ call plug#end()
 " If you want :UltiSnipsEdit to split your window.
 ""let g:UltiSnipsEditSplit="vertical"
 ""let g:UltiSnipsListSnippets="<c-tab>"
+
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+let g:ale_statusline_format = ['X %d', '! %d', 'ok']
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0     "do not run while enter a file
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
